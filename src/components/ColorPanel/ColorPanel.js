@@ -3,11 +3,20 @@ import "./ColorPanel.css"
 
 
 const ColorPanel = ({ colorPanel }) => {
+     
+    const listItem = colorPanel.map(color => {
+        const divStyle = {
+            backgroundColor: color.hex
+        }
+        const pourcentage = Math.round(color.value * 100) 
+        return <li className="colorpanel__item" style={ divStyle  }>Color : { color.hex } ({ pourcentage }%)</li> 
+    })
+
     return (
         <div className="colorpanel__container">
-            <h1>Panel</h1>
-            <p>{ colorPanel[0] }</p>
-            <p>Hop</p>
+            <ul className="colorpanel__list">
+                { listItem }
+            </ul>
         </div>
     )
 }

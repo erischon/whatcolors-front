@@ -18,7 +18,7 @@ const PATH = "http://localhost:3001/"
 const initialState = {
   input: "",
   imageUrl: "",
-  colorPanel: {},
+  colorPanel: [],
   route: 'signin',
   isSignedIn: false,
   user: {
@@ -56,7 +56,7 @@ class App extends Component {
   }
 
   displaycolorPanel = (colorPanel) => {
-    this.setState({colorPanel: colorPanel})
+    this.setState({ colorPanel: colorPanel })
   }
 
   onInputChange = (event) => {
@@ -110,7 +110,7 @@ class App extends Component {
 
         <Navigation isSignedIn={ isSignedIn} onRouteChange={ this.onRouteChange }/>
         { route === 'home' 
-          ? <div>
+          ? <div className="main__container">
             <Logo />
             <Rank 
               name={this.state.user.name}

@@ -1,4 +1,9 @@
 .colorpanel__container {
     display: flex;
     border: 2px solid black;
+    background-color: aqua;
+}
+
+.colorpanel__list {
+    background-color: blue;
 }
