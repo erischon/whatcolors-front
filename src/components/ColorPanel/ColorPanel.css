@@ -1,9 +1,25 @@
 .colorpanel__container {
     display: flex;
-    border: 2px solid black;
-    background-color: aqua;
+    justify-content: center;
+    margin: .25rem 1rem;
+    padding: .25rem;
+    border: 1px solid black;
 }
 
 .colorpanel__list {
-    background-color: blue;
+    padding: 0 1rem;
+}
+
+.colorpanel__box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.colorpanel__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+    margin-bottom: .5rem;
 }

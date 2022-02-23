@@ -1,9 +1,6 @@
-.bounding-box {
-    box-shadow: 0 0 0 3px #149df2 inset;
-    justify-content: center;
-    cursor: pointer;
-}
+
 
 .displayimage__container {
     display: flex;
+    margin-bottom: 1rem;
 }

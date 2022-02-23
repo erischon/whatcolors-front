@@ -9,7 +9,11 @@ const ColorPanel = ({ colorPanel }) => {
             backgroundColor: color.hex
         }
         const pourcentage = Math.round(color.value * 100) 
-        return <li className="colorpanel__item" style={ divStyle  }>Color : { color.hex } ({ pourcentage }%)</li> 
+        return (
+            <li className="colorpanel__item">
+                <span className="colorpanel__box" style={ divStyle  } />
+                Color : { color.hex } ({ pourcentage }%)
+            </li>) 
     })
 
     return (
