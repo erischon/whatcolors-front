@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import './App.css';
-import Particles from "react-tsparticles";
+
 
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
@@ -13,57 +13,6 @@ import Register from "./components/Register/Register";
 const PATH = "https://shielded-escarpment-52618.herokuapp.com/"
 // const PATH = "http://localhost:3001/"
 
-const particlesOptions = {
-  background: {
-    color: {
-      value: "#0d47a1",
-    },
-  },
-
-  fpsLimit: 60,
-
-  particles: {
-    color: {
-      value: "#ffffff",
-    },
-    links: {
-      color: "#ffffff",
-      distance: 150,
-      enable: true,
-      opacity: 0.5,
-      width: 1,
-    },
-    collisions: {
-      enable: true,
-    },
-    move: {
-      direction: "none",
-      enable: true,
-      outMode: "bounce",
-      random: false,
-      speed: 1,
-      straight: false,
-    },
-    number: {
-      density: {
-        enable: true,
-        area: 800,
-      },
-      value: 80,
-    },
-    opacity: {
-      value: 0.5,
-    },
-    shape: {
-      type: "circle",
-    },
-    size: {
-      random: true,
-      value: 5,
-    },
-  },
-  detectRetina: true,
-};
 
 const initialState = {
   input: "",
@@ -161,11 +110,6 @@ class App extends Component {
     return (
       <div className="App">
 
-        <Particles
-          className="particles"
-          // id="tsparticles"
-          options={ particlesOptions }
-        />
 
         <Navigation isSignedIn={ isSignedIn} onRouteChange={ this.onRouteChange }/>
         { route === 'home' 
