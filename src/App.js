@@ -110,13 +110,17 @@ class App extends Component {
         <Navigation isSignedIn={ isSignedIn} onRouteChange={ this.onRouteChange }/>
         { route === 'home' 
           ? <div className="main__container">
-            <Rank 
-              name={this.state.user.name}
-              entries={this.state.user.entries}
-            />
-            <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
-            <DisplayImage imageUrl={ imageUrl } />
-            <ColorPanel colorPanel={ colorPanel } />
+              <Rank 
+                name={this.state.user.name}
+                entries={this.state.user.entries}
+              />
+              <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
+
+              <div className="result__container container grid">
+                <DisplayImage imageUrl={ imageUrl } />
+                <ColorPanel colorPanel={ colorPanel } />
+              </div>
+
           </div>
           : (
             route === 'signin'
