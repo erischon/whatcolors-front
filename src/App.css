@@ -15,3 +15,29 @@
 .result__container {
   margin: 0 auto;
 }
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+@media screen and (max-width: 320px) {
+
+  
+}
+
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+
+
+}
+
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+
+  .result__container {
+    grid-template-columns: repeat(2, 350px);
+  }
+
+}
