@@ -8,7 +8,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
         <nav className='nav__container'>
             <div className='nav__logo'>
               <img src={ logo } alt="logo" className="logo__image"/>
-              <span className="logo__name">What Color</span>
+              <span className="logo__name">What Colors</span>
             </div>
             <ul className='nav__list'>
               <li onClick={() => onRouteChange('signout')} className='nav__link'>Sign Out</li>
