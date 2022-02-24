@@ -81,10 +81,35 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', cursive;
-  /* background: linear-gradient(to right, rgb(55, 0, 255), rgb(153, 0, 255)); */
   background-color: var(--body-color);
 }
 
 button {
   cursor: pointer;
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semibold);
 }
