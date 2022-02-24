@@ -50,7 +50,8 @@ class App extends Component {
     const Colors = data.outputs[0].data.colors;
     let colorPanel = []
     Colors.forEach(color => {
-      colorPanel.push({hex: color.raw_hex, value: color.value}) 
+      console.log(color.w3c.hex)
+      colorPanel.push({hex: color.w3c.hex, name: color.w3c.name, value: color.value}) 
     })
     return colorPanel
   }
