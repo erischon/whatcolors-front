@@ -24,3 +24,7 @@
     align-items: center;
     cursor: pointer;
 }
+
+.nav__link:hover {
+    color: var(--first-color-alt);
+}

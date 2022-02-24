@@ -22,7 +22,7 @@
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 61%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -112,4 +112,14 @@ button {
 h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semibold);
+}
+
+.link {
+  font-weight: var(--font-medium);
+  align-items: center;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--first-color-alt);
 }

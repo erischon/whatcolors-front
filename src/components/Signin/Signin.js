@@ -46,7 +46,7 @@ class Signin extends React.Component {
         
         return (
             <section className="signin__container container grid">
-                <main className="signin__wrapper">
+                <main className="signin__form">
                     <h1 className="signin__title">Sign In</h1>
 
                     <div className="signin__form--div">
@@ -70,7 +70,7 @@ class Signin extends React.Component {
                         />
                     </div>         
 
-                    <div className="">
+                    <div className="signin__form--button">
                         <input
                             onClick={ this.onSubmitSignIn } 
                             className="signin__button"
@@ -79,8 +79,8 @@ class Signin extends React.Component {
                         />
                     </div>
 
-                    <div className="lh-copy mt3">
-                        <p onClick={ () => onRouteChange('register') } className="f6 link dim black db pointer">Register</p>
+                    <div className="signin__form--register">
+                        <p onClick={ () => onRouteChange('register') } className="link">Register</p>
                     </div>
                 </main>
             </section>
