@@ -1,15 +1,18 @@
 import React from "react"
+import "./Rank.css"
 
 const Rank = ({ name, entries }) => {
     return (
-        <div className="text-center m-6">
-            <div className="white text-lg">
+        <section className="rank__container container grid">
+            <h1>What Colors?</h1>
+
+            <div className="">
                 {`${ name }, your current entries is...`}
             </div>
-            <div className="white text-2xl">
+            <div className="">
                 { entries }
             </div>
-        </div>
+        </section>
     )
 }
 
