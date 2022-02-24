@@ -116,7 +116,7 @@ class App extends Component {
               />
               <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
 
-              <div className="result__container container grid">
+              <div className="result__container grid">
                 <DisplayImage imageUrl={ imageUrl } />
                 <ColorPanel colorPanel={ colorPanel } />
               </div>

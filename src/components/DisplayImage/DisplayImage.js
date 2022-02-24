@@ -6,7 +6,7 @@ const DisplayImage = ({ imageUrl }) => {
     return (
         <div className="displayimage__container">
             <div className="">
-                <img id="inputImage" src={ imageUrl } alt="" width="500px" height="auto"/>
+                <img className="displayimage__image" id="inputImage" src={ imageUrl } alt="" height="auto"/>
             </div>       
         </div>
     )

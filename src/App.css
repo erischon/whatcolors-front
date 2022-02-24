@@ -10,10 +10,13 @@
 .main__container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2.5rem;
 }
 
 .result__container {
-  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  align-content: ;
 }
 
 
@@ -29,6 +32,12 @@
 /* For medium devices */
 @media screen and (min-width: 576px) {
 
+  .result__container {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    justify-content: center;
+  }
 
 }
 
@@ -37,7 +46,7 @@
 @media screen and (min-width: 992px) {
 
   .result__container {
-    grid-template-columns: repeat(2, 350px);
+    max-width: 700px;
   }
 
 }

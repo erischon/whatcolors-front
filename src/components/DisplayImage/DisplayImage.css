@@ -1,4 +1,9 @@
 .displayimage__container {
     display: flex;
     margin-bottom: 1rem;
+    margin: 0 1rem;
+}
+
+.displayimage__image {
+    width: 100%;
 }
