@@ -9,7 +9,7 @@ const Rank = ({ name, entries }) => {
             <div className="">
                 {`${ name }, your current entries is...`}
             </div>
-            <div className="">
+            <div className="rank__entries">
                 { entries }
             </div>
         </section>

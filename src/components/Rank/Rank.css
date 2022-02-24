@@ -4,3 +4,8 @@
     margin: 0 auto;
     width: 100%;
 }
+
+.rank__entries {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semibold);
+}
