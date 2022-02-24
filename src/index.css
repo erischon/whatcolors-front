@@ -70,6 +70,9 @@
   margin: 0;
 }
 
+body {
+  transition: .4s;
+}
 
 
 

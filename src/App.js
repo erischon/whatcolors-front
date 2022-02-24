@@ -107,7 +107,6 @@ class App extends Component {
     return (
       <div className="App">
 
-
         <Navigation isSignedIn={ isSignedIn} onRouteChange={ this.onRouteChange }/>
         { route === 'home' 
           ? <div className="main__container">
