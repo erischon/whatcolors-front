@@ -5,7 +5,7 @@ import logo from "./bx-palette.svg"
 const Navigation = ({ onRouteChange, isSignedIn }) => {
     if (isSignedIn) {
       return (
-        <nav className='nav__container container grid'>
+        <nav className='nav__container'>
             <div className='nav__logo'>
               <img src={ logo } alt="logo" className="logo__image"/>
               <span className="logo__name">What Colors</span>
