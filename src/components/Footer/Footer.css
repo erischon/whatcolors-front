@@ -1,0 +1,17 @@
+.footer__container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--first-color);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 25px
+}
