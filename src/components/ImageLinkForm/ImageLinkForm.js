@@ -8,7 +8,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
                 { "This Tool will Find Colors in your pictures. Give it a try!" }
             </div>
             <div className="ilf__form">
-                <input className="ilf__form--input" type="tex" onChange={ onInputChange }/>
+                <input className="ilf__form--input" placeholder="Image Url" type="tex" onChange={ onInputChange }/>
                 <button 
                     className="ilf__form--button" 
                     onClick={ onButtonSubmit }
