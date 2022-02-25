@@ -45,7 +45,7 @@ class Register extends React.Component {
     }
 
     render () {
-        const { onRouteChange } = this.props
+        // const { onRouteChange } = this.props
 
         return (
             <section className="register__container container grid">

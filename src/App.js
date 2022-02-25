@@ -10,8 +10,8 @@ import ColorPanel from "./components/ColorPanel/ColorPanel";
 import Signin from "./components/Signin/Signin";
 import Register from "./components/Register/Register";
 
-// const PATH = "https://shielded-escarpment-52618.herokuapp.com/"
-const PATH = "http://localhost:3001/"
+const PATH = "https://erischon-whatcolors.herokuapp.com/"
+// const PATH = "http://localhost:3001/"
 
 
 const initialState = {
