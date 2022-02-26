@@ -11,8 +11,8 @@ import Signin from "./components/Signin/Signin";
 import Register from "./components/Register/Register";
 import Footer from "./components/Footer/Footer";
 
-// const PATH = "https://erischon-whatcolors.herokuapp.com/"
-const PATH = "http://localhost:3001/"
+const PATH = "https://erischon-whatcolors.herokuapp.com/"
+// const PATH = "http://localhost:3001/"
 
 
 const initialState = {
