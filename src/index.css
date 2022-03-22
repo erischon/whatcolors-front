@@ -33,8 +33,8 @@ body {
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --small-font-size: .65rem;
+  --smaller-font-size: .55rem;
   --tiny-font-size: .625rem;
 
   /*========== Font weight ==========*/
