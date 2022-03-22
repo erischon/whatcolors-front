@@ -20,9 +20,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
           <div className='nav__subtitle'>Find the colors in your pictures!</div>
         </div>
 
-        <ul>
-          <li>About</li>
-        </ul>
+
     </nav>
   );
     
