@@ -28,3 +28,20 @@
 .nav__link:hover {
     color: var(--first-color-alt);
 }
+
+.nav__logo--icon {
+    font-size: 1.25rem;
+}
+
+.logo__name--1 {
+    font-family: 'Popins';
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-right: 0.1rem;
+}
+
+.logo__name--2 {
+    font-family: 'Popins';
+    font-weight: 800;
+    font-size: 1.1rem;
+}

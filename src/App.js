@@ -36,15 +36,15 @@ class App extends Component {
     this.state = initialState
   }
 
-  loadUser = (data) => {
-    this.setState({user: {
-      id: data.id,
-      name: data.name,
-      email: data.email,
-      entries: data.entries,
-      joined: data.joined
-    }})
-  }
+  // loadUser = (data) => {
+  //   this.setState({user: {
+  //     id: data.id,
+  //     name: data.name,
+  //     email: data.email,
+  //     entries: data.entries,
+  //     joined: data.joined
+  //   }})
+  // }
 
   getColors = (data) => {
     const Colors = data.outputs[0].data.colors;
@@ -109,28 +109,22 @@ class App extends Component {
       <div className="App">
 
         <Navigation isSignedIn={ isSignedIn} onRouteChange={ this.onRouteChange }/>
-        { route === 'home' 
-          ? <div className="main__container">
-              <Rank 
-                name={this.state.user.name}
-                entries={this.state.user.entries}
-              />
-              <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
 
-              <div className="result__container grid">
-                <DisplayImage imageUrl={ imageUrl } />
-                <ColorPanel colorPanel={ colorPanel } />
-              </div>
+        <div className="main__container">
+            <Rank 
+              name={this.state.user.name}
+              entries={this.state.user.entries}
+            />
+            <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
 
-              <Footer />
+            <div className="result__container grid">
+              <DisplayImage imageUrl={ imageUrl } />
+              <ColorPanel colorPanel={ colorPanel } />
+            </div>
 
-          </div>
-          : (
-            route === 'signin'
-            ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} PATH={PATH}/>
-            : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} PATH={PATH}/>
-          )
-        }
+            <Footer />
+
+        </div>
 
       </div>
     )
