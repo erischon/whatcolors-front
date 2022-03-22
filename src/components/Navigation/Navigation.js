@@ -15,11 +15,9 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
                   <span className="logo__name--1">What</span>
                   <span className="logo__name--2">Colors</span>
                 </div>
-
-              
             </div>
             <ul className='nav__list'>
-              <li onClick={() => onRouteChange('signout')} className='nav__link'>Sign Out</li>
+              <li>...</li>
             </ul>
         </nav>
       );
