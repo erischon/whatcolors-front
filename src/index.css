@@ -15,14 +15,14 @@ body {
   --first-hue: 172;
   --sat: 100%;
   --lig: 37.5%;
-  --second-hue: 0;
+  --second-hue: 172;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 61%); /* -4% */
-  --title-color: hsl(var(--second-hue), 0%, 100%);
-  --text-color: hsl(var(--second-hue), 0%, 100%);
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 47%);
+  --title-color: hsl(var(--second-hue), 15%, 95%);
+  --text-color: hsl(var(--second-hue), 100%, 37.5%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  --body-color: hsl(var(--second-hue), 48%, 0%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
 
   /*========== Font and typography ==========*/
