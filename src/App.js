@@ -4,11 +4,8 @@ import React, { Component } from "react"
 
 import Navigation from './components/Navigation/Navigation';
 import ImageLinkForm from "./components/ImageLinkForm.component";
-import Rank from './components/Rank/Rank';
-import DisplayImage from './components/DisplayImage/DisplayImage'
-import ColorPanel from "./components/ColorPanel/ColorPanel";
-import Signin from "./components/Signin/Signin";
-import Register from "./components/Register/Register";
+import DisplayImage from "./components/DisplayImage.component";
+import ColorPanel from "./components/ColorPanel.component";
 import Footer from "./components/Footer/Footer";
 
 const PATH = "https://erischon-whatcolors.herokuapp.com/"
