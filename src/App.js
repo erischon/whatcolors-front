@@ -110,12 +110,12 @@ class App extends Component {
 
         <Navigation isSignedIn={ isSignedIn} onRouteChange={ this.onRouteChange }/>
 
-        <div className="main__container">
+        <div className="flex flex-col">
 
             <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
 
-            <div className="result__container bg-teal-100 grid grid-cols-2">
-              <DisplayImage imageUrl={ imageUrl } className="flex" />
+            <div className="grid grid-cols-2 rounded p-2 container mx-auto bg-zinc-300">
+              <DisplayImage imageUrl={ imageUrl } />
               <ColorPanel colorPanel={ colorPanel } />
             </div>
 
