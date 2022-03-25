@@ -3,7 +3,7 @@ import React, { Component } from "react"
 
 
 import Navigation from './components/Navigation/Navigation';
-import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm"
+import ImageLinkForm from "./components/ImageLinkForm.component";
 import Rank from './components/Rank/Rank';
 import DisplayImage from './components/DisplayImage/DisplayImage'
 import ColorPanel from "./components/ColorPanel/ColorPanel";
