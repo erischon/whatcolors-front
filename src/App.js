@@ -114,8 +114,8 @@ class App extends Component {
 
             <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
 
-            <div className="result__container grid">
-              <DisplayImage imageUrl={ imageUrl } />
+            <div className="result__container bg-teal-100 grid grid-cols-2">
+              <DisplayImage imageUrl={ imageUrl } className="flex" />
               <ColorPanel colorPanel={ colorPanel } />
             </div>
 
