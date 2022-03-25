@@ -13,8 +13,8 @@ const ColorPanel = ({ colorPanel }) => {
             <div className="grid grid-cols-8 justify-start items-center gap-x-2 py-0.5">
                 <span className="inline-block w-5 h-5" style={ divStyle  } />
                 <div className="text-sm md:text-base col-span-2">{ color.hex }</div>
-                <div className="text-sm col-span-3">{ color.name }</div>
-                <div className="text-xs col-span-2">({ pourcentage }%)</div>
+                <div className="text-sm md:text-base col-span-3">{ color.name }</div>
+                <div className="text-xs md:text-sm col-span-2">({ pourcentage }%)</div>
             </div>
         ) 
     })
