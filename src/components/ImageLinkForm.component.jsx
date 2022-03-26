@@ -10,7 +10,7 @@ const inputUrl = "rounded px-1 py-2 outline outline-1 outline-offset-1 shadow-md
 const inputUrlMedia = "md:mr-2 md:w-4/5"
 
 const button = "bg-teal-700 text-white px-1 py-2 rounded outline outline-1 outline-teal-700 shadow-md"
-const buttonMedia = "md:hover:bg-white md:hover:text-teal-700 md:w-1/5 md:hover:border-teal-700"
+const buttonMedia = "md:hover:bg-white md:hover:text-teal-700 md:w-1/5 md:hover:border-teal-700 md:hover:font-bold"
 
 // Component
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {

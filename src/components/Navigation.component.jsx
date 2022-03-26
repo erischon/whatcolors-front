@@ -6,7 +6,7 @@ import { BsPalette2 } from "react-icons/bs"
 const Navigation = ({ onRouteChange, isSignedIn }) => {
 
   return (
-    <nav className='h-10 flex-col items-baseline mx-2 my-1'>
+    <nav className='h-10 flex flex-col md:flex-row items-baseline mx-2 my-1'>
         <div className='flex items-baseline'>
           <BsPalette2 className='text-xl mr-2'/>
 

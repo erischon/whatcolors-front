@@ -2,7 +2,7 @@ import React, { Component } from "react"
 // import './App.css';
 
 
-import Navigation from "./components/Navigation/Navigation.component";
+import Navigation from "./components/Navigation.component";
 import ImageLinkForm from "./components/ImageLinkForm.component";
 import DisplayImage from "./components/DisplayImage.component";
 import ColorPanel from "./components/ColorPanel.component";
@@ -70,7 +70,7 @@ class App extends Component {
     const { imageUrl, colorPanel } = this.state
 
     const Result = () => (
-      <div className="md:grid md:grid-cols-2 items-start container mx-auto mb-16">
+      <div className="md:grid md:grid-cols-2 items-start container mx-auto mb-10">
         <DisplayImage imageUrl={ imageUrl } />
         <ColorPanel colorPanel={ colorPanel } />
       </div>
