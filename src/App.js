@@ -2,29 +2,19 @@ import React, { Component } from "react"
 // import './App.css';
 
 
-import Navigation from './components/Navigation/Navigation';
+import Navigation from "./components/Navigation/Navigation.component";
 import ImageLinkForm from "./components/ImageLinkForm.component";
 import DisplayImage from "./components/DisplayImage.component";
 import ColorPanel from "./components/ColorPanel.component";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer.component";
 
 const PATH = "https://erischon-whatcolors.herokuapp.com/"
 // const PATH = "http://localhost:3001/"
-
 
 const initialState = {
   input: "",
   imageUrl: "",
   colorPanel: [],
-  route: 'signin',
-  isSignedIn: false,
-  user: {
-    id: "",
-    name: "",
-    email: "",
-    entries: 0,
-    joined: "" 
-  }
 }
 
 class App extends Component {
@@ -33,21 +23,10 @@ class App extends Component {
     this.state = initialState
   }
 
-  // loadUser = (data) => {
-  //   this.setState({user: {
-  //     id: data.id,
-  //     name: data.name,
-  //     email: data.email,
-  //     entries: data.entries,
-  //     joined: data.joined
-  //   }})
-  // }
-
   getColors = (data) => {
     const Colors = data.outputs[0].data.colors;
     let colorPanel = []
     Colors.forEach(color => {
-      console.log(color.w3c.hex)
       colorPanel.push({hex: color.w3c.hex, name: color.w3c.name, value: color.value}) 
     })
     return colorPanel
@@ -75,15 +54,9 @@ class App extends Component {
       if (response) {
         fetch(`${ PATH }image`, {
           method: "PUT",
-          headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({
-              id: this.state.user.id
-          })
+          headers: {"Content-Type": "application/json"}
         })
         .then(response => response.json())
-        .then(count => {
-          this.setState(Object.assign(this.state.user, {entries: count}))    
-        })
         .catch(console.log)
       }
       this.displaycolorPanel(this.getColors(response))
@@ -91,35 +64,28 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
-  onRouteChange = (route) => {
-    if (route === "signout") {
-      this.setState(initialState)
-    } else if (route === "home") {
-      this.setState({ isSignedIn: true })
-    }
-    this.setState({ route: route })
-  }
+
 
   render() {
-    const { isSignedIn, imageUrl, route, colorPanel } = this.state
-    return (
-      <div className="App">
+    const { imageUrl, colorPanel } = this.state
 
-        <Navigation isSignedIn={ isSignedIn} onRouteChange={ this.onRouteChange }/>
+    const Result = () => (
+      <div className="md:grid md:grid-cols-2 items-start container mx-auto mb-16">
+        <DisplayImage imageUrl={ imageUrl } />
+        <ColorPanel colorPanel={ colorPanel } />
+      </div>
+    )
+
+    return (
+      <div className="App container mx-auto flex flex-col h-screen justify-between mt-1">
+        <Navigation />
 
         <div className="flex flex-col">
-
-            <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
-
-            <div className="md:grid md:grid-cols-2 items-start container mx-auto">
-              <DisplayImage imageUrl={ imageUrl } />
-              <ColorPanel colorPanel={ colorPanel } />
-            </div>
-
-            <Footer />
-
+          <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
+          {colorPanel.length > 0 ? <Result /> : null }
         </div>
 
+        <Footer />
       </div>
     )
   }

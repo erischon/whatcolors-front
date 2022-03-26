@@ -4,7 +4,7 @@ import React from 'react';
 
 const DisplayImage = ({ imageUrl }) => {
     return (
-        <div className="">
+        <div className="mx-1">
             <div className="">
                 <img className="md:rounded-md mb-6" id="inputImage" src={ imageUrl } alt="" height="auto"/>
             </div>       

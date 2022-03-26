@@ -23,8 +23,9 @@ const ColorPanel = ({ colorPanel }) => {
             { listItem }
 
             <div className="container mx-auto mt-10 flex justify-center">
-                <button className="text-white bg-teal-700 px-6 py-2 rounded">Export</button>
+                <button className="text-white bg-teal-700 px-6 py-2 rounded shadow-md">Export</button>
             </div>
+
         </div>
     )
 }
