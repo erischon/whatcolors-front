@@ -77,7 +77,7 @@ class App extends Component {
     )
 
     return (
-      <div className="App container mx-auto flex flex-col h-screen justify-between mt-1">
+      <div className="App container mx-auto flex flex-col h-screen justify-between mt-1 max-w-3xl">
         <Navigation />
 
         <div className="flex flex-col">
