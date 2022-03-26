@@ -1,12 +1,12 @@
 import React from 'react';
-import "./DisplayImage.css"
+// import "./DisplayImage.css"
 
 
 const DisplayImage = ({ imageUrl }) => {
     return (
-        <div className="displayimage__container">
+        <div className="mx-1">
             <div className="">
-                <img className="displayimage__image" id="inputImage" src={ imageUrl } alt="" height="auto"/>
+                <img className="md:rounded-md mb-6" id="inputImage" src={ imageUrl } alt="" height="auto"/>
             </div>       
         </div>
     )

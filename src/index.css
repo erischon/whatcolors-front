@@ -2,35 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
 
 
 :root {
   --header-height: 3.5rem;
 
-  --first-hue: 14;
+  --first-hue: 172;
   --sat: 100%;
-  --lig: 56%;
-  --second-hue: 219;
+  --lig: 37.5%;
+  --second-hue: 172;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 61%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 47%);
   --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
+  --text-color: hsl(var(--second-hue), 100%, 37.5%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --body-color: hsl(var(--second-hue), 48%, 0%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Nunito', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --small-font-size: .65rem;
+  --smaller-font-size: .55rem;
   --tiny-font-size: .625rem;
 
   /*========== Font weight ==========*/
@@ -51,8 +52,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .55rem;
   }
 }
 
@@ -65,8 +66,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', cursive;
-  background-color: var(--body-color);
+  font-family: var(--body-font);
 }
 
 button {
@@ -75,16 +75,16 @@ button {
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+/* .container {
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
-}
+} */
 
-.grid {
+/* .grid {
   display: grid;
   gap: 1.25rem;
-}
+} */
 
 .main {
   overflow: hidden;
