@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import Navigation from "../components/navigation.component";
+import Navigation from "../components/Navigation.component";
 import ImageLinkForm from "../components/ImageLinkForm.component";
 import DisplayImage from "../components/DisplayImage.component";
 import ColorPanel from "../components/ColorPanel.component";
