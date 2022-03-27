@@ -80,7 +80,11 @@ class App extends Component {
       <div className="App container mx-auto flex flex-col h-screen justify-between mt-1 max-w-3xl">
         <Navigation />
 
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-4">
+          <div className='flex gap-x-0.5 items-baseline justify-center'>
+            <span className="text-5xl font-light font-title">what</span>
+            <span className="text-5xl font-extrabold font-title text-teal-700">colors</span>
+          </div>
           <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
           {colorPanel.length > 0 ? <Result /> : null }
         </div>
