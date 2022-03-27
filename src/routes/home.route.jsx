@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import Navigation from "../components/Navigation.component";
+import Navigation from "../components/navigation.component";
 import ImageLinkForm from "../components/ImageLinkForm.component";
 import DisplayImage from "../components/DisplayImage.component";
 import ColorPanel from "../components/ColorPanel.component";
@@ -75,16 +75,18 @@ class Home extends Component {
     )
 
     return (
-      <div className="App container mx-auto flex flex-col h-screen justify-between mt-1 max-w-3xl">
-        <Navigation />
+      <div className="App container flex flex-col justify-between mx-auto h-screen mt-1 max-w-3xl">
+        <div className="container">
+            <Navigation />
 
-        <div className="flex flex-col mt-4">
-          <div className='flex gap-x-0.5 items-baseline justify-center'>
-            <span className="text-5xl font-light font-title">what</span>
-            <span className="text-5xl font-extrabold font-title text-teal-700">colors</span>
-          </div>
-          <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
-          {colorPanel.length > 0 ? <Result /> : null }
+            <div className="flex flex-col pt-4">
+            <div className='flex gap-x-0.5 items-baseline justify-center'>
+                <span className="text-5xl font-light font-title">what</span>
+                <span className="text-5xl font-extrabold font-title text-teal-700">colors</span>
+            </div>
+            <ImageLinkForm onInputChange={ this.onInputChange } onButtonSubmit={ this.onButtonSubmit } />
+            {colorPanel.length > 0 ? <Result /> : null }
+            </div>
         </div>
 
         <Footer />
