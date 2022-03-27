@@ -1,6 +1,6 @@
 const SignIn = () => {
     return (
-        <h1>Sign-in Page</h1>
+        <h1 className="container">Coming Soon...</h1>
     )
 }
 
