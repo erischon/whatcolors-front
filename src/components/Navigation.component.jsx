@@ -4,6 +4,8 @@ import { Link } from "react-router-dom"
 import { BsPalette2 } from "react-icons/bs"
 import { Fragment } from 'react/cjs/react.production.min';
 
+import SignIn from '../routes/sign-in.route';
+
 
 const Navigation = () => {
 
@@ -24,7 +26,7 @@ const Navigation = () => {
           </div>
 
           <div className='container flex justify-end text-sm items-center'>
-            <Link to="/sign-in" className='font-medium'>Sign In</Link>
+            <SignIn />
           </div>
       </nav>
 
