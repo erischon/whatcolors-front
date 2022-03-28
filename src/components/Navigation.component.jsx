@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Link } from "react-router-dom"
 import { BsPalette2 } from "react-icons/bs"
 import { Fragment } from 'react/cjs/react.production.min';
 
